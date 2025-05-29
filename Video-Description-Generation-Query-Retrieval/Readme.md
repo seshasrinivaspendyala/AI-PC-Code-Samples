@@ -27,13 +27,15 @@ This sample supports sports-related queries and uses a subset of videos from the
 
     .
     ├── Video-Description-Generation-Query-Retrieval
-    │ ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
+    │
+    │ ├── assets
+    │ └── Video_description_generation_and_query_retrieval_workflow.jpg
+    │
+    ├── Readme.md
+    ├── SVW_subset_video_dataset.zip
+    ├── Video_Description_Generation_Query_Retrieval.ipynb
+    ├── pyproject.toml
+    └── uv.lock
 
 | Component      | Recommended                                             |
 | -------------- | ------------------------------------------------------- |
@@ -41,18 +43,6 @@ This sample supports sports-related queries and uses a subset of videos from the
 | Random-access memory(RAM)          | 32 GB                                                   |
 | Hardware | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, or Intel Graphics, Intel® Data Center GPU Max Series |
 
-
-
-    .
-    │\
-├── src/ # Core logic for video description and retrieval\
-│ ├── description_gen.py # Module to generate descriptions from videos
-│ └── query_retrieval.py # Module to retrieve relevant segments by query
-│
-├── samples/ # Sample videos and queries for testing
-├── configs/ # Config files for model and environment setup
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation (this file)
 
 ## Installing Prerequisites and Setting Up the Environment
 
