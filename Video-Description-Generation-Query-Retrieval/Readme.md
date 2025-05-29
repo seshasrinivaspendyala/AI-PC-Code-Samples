@@ -26,13 +26,22 @@ This sample supports sports-related queries and uses a subset of videos from the
 ## Sample Structure
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
+    ├── Video-Description-Generation-Query-Retrieval
+    │ ├── build                   # Compiled files (alternatively `dist`)
     ├── docs                    # Documentation files (alternatively `doc`)
     ├── src                     # Source files (alternatively `lib` or `app`)
     ├── test                    # Automated tests (alternatively `spec` or `tests`)
     ├── tools                   # Tools and utilities
     ├── LICENSE
     └── README.md
+
+| Component      | Recommended                                             |
+| -------------- | ------------------------------------------------------- |
+| Operating System(OS)             | Windows 11 or later/ Ubuntu 20.04 or later                    |
+| Random-access memory(RAM)          | 32 GB                                                   |
+| Hardware | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, or Intel Graphics, Intel® Data Center GPU Max Series |
+
+
 
     .
     │\
@@ -46,13 +55,6 @@ This sample supports sports-related queries and uses a subset of videos from the
 └── README.md # Project documentation (this file)
 
 ## Installing Prerequisites and Setting Up the Environment
-
-| Optimized for                      | Description                                                                                                                                                                 |
-| :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OS                        | Windows 11 and newer or Ubuntu* 22.04 and newer                                                                                                                                                                                                              |
-| Hardware                  | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, or Intel Graphics, Intel® Data Center GPU Max Series                                                                                                                                                                                                         |
-| Software                  | [Intel® GPU drivers from Intel® Arc™ & Iris® Xe Graphics for Windows](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html), [uv](https://docs.astral.sh/uv/)                                                                                                                                                                                       |
-| Minimum RAM required      | 32 GB or more                                                                                  
 
 
 ## Run the `Video Description Generation and Query Retrieval` Sample:
