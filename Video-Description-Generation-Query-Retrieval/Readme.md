@@ -1,14 +1,19 @@
 # Video Description Generation and Query Retrieval
-## Overview
-This notebook demonstrates how to generate video descriptions using the [**Qwen 2.5 Vision-Language model**](https://github.com/QwenLM/Qwen2.5-VL) and store their embeddings in [**ChromaDB**](https://www.trychroma.com/) for efficient semantic search on **Intel® Core™ Ultra Processors**. The Qwen 2.5 Vision-Language model is loaded using the [**PyTorch XPU backend**](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.\
+## Introduction
+This sample demonstrates how to generate video descriptions using the [**Qwen 2.5 Vision-Language model**](https://github.com/QwenLM/Qwen2.5-VL) and store their embeddings in [**ChromaDB**](https://www.trychroma.com/) for efficient semantic search on **Intel® Core™ Ultra Processors**. The Qwen 2.5 Vision-Language model is loaded using the [**PyTorch XPU backend**](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.\
 For each video, a description is generated and stored as an embedding in ChromaDB. When a user submits a query, cosine similarity search is performed in ChromaDB to retrieve the most relevant video description. The matching video is then displayed inline.\
 This sample supports sports-related queries and uses a subset of videos from the [**Sports Videos in the Wild (SVW)**](https://cvlab.cse.msu.edu/project-svw.html) dataset. For more information on the dataset and citation requirements, please refer to the [**Sports Videos in the Wild (SVW) dataset paper**](https://cvlab.cse.msu.edu/project-svw.html#:~:text=SVW%20Download,Bibtex%20%7C%20PDF).
 
-## Contents
-- [Workflow](./Readme.md#workflow)
+## Table of Contents
+1. Video description generation and query retrieval workflow
+2. Sample structure
+3. Installing pre-requisites and setting up the environment
+   - Windows
+   - Linux
+4. Run the sample
+5. Sample execution
 
-
-## Workflow
+## Video description generation and query retrieval workflow
 - During the initial data load, a subset of videos from the [Sports Videos in the Wild (SVW)](https://cvlab.cse.msu.edu/project-svw.html) dataset is fed into the [Qwen 2.5 Vision-Language model](https://github.com/QwenLM/Qwen2.5-VL).
 - Here, the [Qwen2.5-VL-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct) model variant is used to process these videos and generate descriptions. The Qwen 2.5 Vision-Language model is loaded using the [PyTorch XPU backend](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.
 - Next, the generated video descriptions are converted into embeddings using [Sentence Transformers](https://sbert.net/), with the [all-MiniLM-L6-v2 model](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
@@ -16,9 +21,10 @@ This sample supports sports-related queries and uses a subset of videos from the
 - When a user submits a query, the text is similarly encoded into an embedding, which is then used to perform a semantic search (via cosine similarity) over the ChromaDB collection.
 - The final result will be the most relevant video description and its associated video file name, and the video is displayed directly in the notebook.
 
-<img width="800" alt="image" src="./assets/Video_description_generation_and_query_retrieval_workflow.jpg">
+## Sample structure
+![How it works](./assets/Video_description_generation_and_query_retrieval_workflow.jpg)
 
-## Pre-requisites
+## Installing pre-requisites and setting up the environment
 
 | Optimized for                      | Description                                                                                                                                                                 |
 | :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
