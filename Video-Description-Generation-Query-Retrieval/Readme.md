@@ -7,11 +7,12 @@ This sample supports sports-related queries and uses a subset of videos from the
 ## Table of Contents
 1. Video Description Generation and Query Retrieval Workflow
 2. Sample Structure
-3. Installing Prerequisites and Setting Up the Environment
+3. Prerequisites
+4. Installing Prerequisites and Setting Up the Environment
    - For Windows
    - For Linux
-4. Running the Sample
-5. Sample Execution Output
+5. Running the Sample
+6. Sample Execution Output
 
 ## Video Description Generation and Query Retrieval Workflow
 - During the initial data load, a subset of videos from the [Sports Videos in the Wild (SVW)](https://cvlab.cse.msu.edu/project-svw.html) dataset is fed into the [Qwen 2.5 Vision-Language model](https://github.com/QwenLM/Qwen2.5-VL).
@@ -35,25 +36,45 @@ This sample supports sports-related queries and uses a subset of videos from the
     │   ├── pyproject.toml                                                     # Requirements for the sample
     │   └── uv.lock                                                            # File which captures the packages installed for the sample
 
+## Prerequisites
+
 | Component      | Recommended                                             |
 | -------------- | ------------------------------------------------------- |
 | Operating System(OS)             | Windows 11 or later/ Ubuntu 20.04 or later                    |
 | Random-access memory(RAM)          | 32 GB                                                   |
-| Hardware | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, or Intel Graphics, Intel® Data Center GPU Max Series |
+| Hardware | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, Intel Graphics, Intel® Xeon® Processor, Intel® Data Center GPU Max Series |
 
 
 ## Installing Prerequisites and Setting Up the Environment
+### Windows:
+The following software is to be installed before setting up of Llamacpp-python SYCL backend
+1. **GPU Drivers installation**\
+   Download and install the Intel® Graphics Driver for Intel® Arc™ B-Series, A-Series, Intel® Iris® Xe Graphics, and Intel® Core™ Ultra Processors with Intel® Arc™ Graphics from [here](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)\
+   **IMPORTANT:** Reboot the system after the installation.
 
+2. **Git for Windows**\
+   Download and install Git from [here](https://git-scm.com/downloads/win)
+
+3. **uv for Windows**\
+
+### Linux:
+1. **GPU Drivers installation**\
+   Download and install the GPU drivers from [here](https://dgpu-docs.intel.com/driver/client/overview.html)
+
+2. **Dependencies on Linux**\
+   Install Git using the following commands:
+   - For Debian/Ubuntu-based systems:
+   ```
+   sudo apt update && sudo apt -y install git
+   ```
+   - For RHEL/CentOS-based systems:
+   ```
+   sudo dnf update && sudo dnf -y install git
+   ```
 
 ## Run the `Video Description Generation and Query Retrieval` Sample:
 
 ### Using `uv`:
-The sample uses [uv](https://docs.astral.sh/uv/) for environment management. 
-> Steps to install `uv` are as follows. Refer [this documentation](https://docs.astral.sh/uv/getting-started/installation/) this for more information.
-> </br> **Windows:** </br>
-> ```bash
-> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-> ```
 > 
 > </br> **Linux:** </br>
 > </br> Use curl to download the script and execute it with sh:
@@ -67,16 +88,16 @@ The sample uses [uv](https://docs.astral.sh/uv/) for environment management.
 > ```
    
 1. In a terminal, navigate to `Video-Description-Generation-Query-Retrieval` folder:
-   ```bash
+   ```
    cd <path/to/Video-Description-Generation-Query-Retrieval/folder>
    ```
    
 2. Launch Jupyter Notebook
 
-   ```bash
+   ```
    uv run jupyter lab
    ```
-   > **NOTE:** Run the below command if you face any dependency issues:
-   > ```bash
-   >   uv clean
-   > ```
+   **NOTE:** Run the below command if you face any dependency issues:
+   ```
+   uv clean
+   ```
