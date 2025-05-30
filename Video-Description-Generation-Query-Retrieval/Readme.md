@@ -26,16 +26,14 @@ This sample supports sports-related queries and uses a subset of videos from the
 ## Sample Structure
 
     .
-    ├── Video-Description-Generation-Query-Retrieval
-    │
-    │ ├── assets
-    │ └── Video_description_generation_and_query_retrieval_workflow.jpg
-    │
-    ├── Readme.md
-    ├── SVW_subset_video_dataset.zip
-    ├── Video_Description_Generation_Query_Retrieval.ipynb
-    ├── pyproject.toml
-    └── uv.lock
+    ├── Video-Description-Generation-Query-Retrieval/                          # Sample folder
+    │   ├── assets/
+    │   │   └── Video_description_generation_and_query_retrieval_workflow.jpg  # Workflow image
+    │   ├── Readme.md                                                          # Readme file which contains all the details and instructions about the sample      
+    │   ├── SVW_subset_video_dataset.zip                                       # ZIP file which contains subset videos of the Sport videos in the wild 
+    │   ├── Video_Description_Generation_Query_Retrieval.ipynb                 # Notebook file to excute the sample
+    │   ├── pyproject.toml                                                     # Requirements for the sample
+    │   └── uv.lock                                                            # File which captures the packages installed for the sample
 
 | Component      | Recommended                                             |
 | -------------- | ------------------------------------------------------- |
