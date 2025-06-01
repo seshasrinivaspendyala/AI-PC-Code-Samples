@@ -100,11 +100,17 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
    
 2. Launch Jupyter Lab and Run the notebook:\
-   Open the [Video Description Generation Query Retrieval](./Video_Description_Generation_Query_Retrieval.ipynb) notebook in the Jupyter Lab. In the Jupyter Lab go to the kernel menu in the top-right corner of the notebook interface and choose default kernel i.e. `Python(ipykernel)` from the available kernels list and run the code cells one by one in the notebook.
-
+   Open the [Video Description Generation Query Retrieval](./Video_Description_Generation_Query_Retrieval.ipynb) notebook in the Jupyter Lab.
+   - In the Jupyter Lab go to the kernel menu in the top-right corner of the notebook interface and choose default kernel i.e. `Python(ipykernel)` from the available kernels list and run the code cells one by one in the notebook.
    ```
    uv run jupyter lab
    ```
+   - If you are running the sample in the Intel Tiber AI Cloud(ITAC), follow these steps in a new terminal session. Create and select the `uv_env` Jupyter kernel to get access to required python packages in the notebook.
+   ```
+   uv sync
+   uv run python -m ipykernel install --user --name=uv_env --display-name="uv_env"
+   ```
+
    **NOTE:** Run the below command if you face any dependency issues:
    ```
    uv clean
