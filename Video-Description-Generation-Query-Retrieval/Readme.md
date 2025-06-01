@@ -1,10 +1,12 @@
 # Video Description Generation and Query Retrieval
 ## Introduction
+
 This sample demonstrates how to generate video descriptions using the [**Qwen 2.5 Vision-Language model**](https://github.com/QwenLM/Qwen2.5-VL) and store their embeddings in [**ChromaDB**](https://www.trychroma.com/) for efficient semantic search on **Intel® Core™ Ultra Processors**. The Qwen 2.5 Vision-Language model is loaded using the [**PyTorch XPU backend**](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.\
 For each video, a description is generated and stored as an embedding in ChromaDB. When a user submits a query, cosine similarity search is performed in ChromaDB to retrieve the most relevant video description. The matching video is then displayed inline.\
 This sample supports sports-related queries and uses a subset of videos from the [**Sports Videos in the Wild (SVW)**](https://cvlab.cse.msu.edu/project-svw.html) dataset. For more information on the dataset and citation requirements, please refer to the [**Sports Videos in the Wild (SVW) dataset paper**](https://cvlab.cse.msu.edu/project-svw.html#:~:text=SVW%20Download,Bibtex%20%7C%20PDF).
 
 ## Table of Contents
+
 1. Workflow
 2. Sample Structure
 3. Prerequisites
@@ -15,6 +17,7 @@ This sample supports sports-related queries and uses a subset of videos from the
 6. Sample Execution Output
 
 ## Workflow
+
 - During the initial data load, a subset of videos from the [Sports Videos in the Wild (SVW)](https://cvlab.cse.msu.edu/project-svw.html) dataset is fed into the [Qwen 2.5 Vision-Language model](https://github.com/QwenLM/Qwen2.5-VL).
 - Here, the [Qwen2.5-VL-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct) model variant is used to process these videos and generate descriptions. The Qwen 2.5 Vision-Language model is loaded using the [PyTorch XPU backend](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.
 - Next, the generated video descriptions are converted into embeddings using [Sentence Transformers](https://sbert.net/), with the [all-MiniLM-L6-v2 model](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
@@ -46,8 +49,8 @@ This sample supports sports-related queries and uses a subset of videos from the
 
 
 ## Installing Prerequisites and Setting Up the Environment
+
 ### Windows:
-Install the following software.
 1. **GPU Drivers installation**\
    Download and install the Intel® Graphics Driver for Intel® Arc™ B-Series, A-Series, Intel® Iris® Xe Graphics, and Intel® Core™ Ultra Processors with Intel® Arc™ Graphics from [here](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)\
    **IMPORTANT:** Reboot the system after the installation.
@@ -87,7 +90,7 @@ Install the following software.
    wget -qO- https://astral.sh/uv/install.sh | sh
    ```
 
-## Run the Sample:
+## Run the Sample
    
 1. In a terminal, navigate to `Video-Description-Generation-Query-Retrieval` folder:
    ```
@@ -103,4 +106,4 @@ Install the following software.
    uv clean
    ```
 
-## Sample Execution Output:
+## Sample Execution Output
