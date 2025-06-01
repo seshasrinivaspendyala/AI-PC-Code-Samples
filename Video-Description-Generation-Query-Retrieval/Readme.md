@@ -49,8 +49,6 @@ This sample supports sports-related queries and uses a subset of videos from the
 
 
 ## Installing Prerequisites and Setting Up the Environment
-For Windows: Open the Command Prompt as an administrator by right-clicking the terminal icon and selecting Run as administrator.\
-For Linux: Open a new terminal window by right-clicking the terminal and selecting New Window.
 
 ### For Windows:
 1. **GPU Drivers installation**\
@@ -61,12 +59,14 @@ For Linux: Open a new terminal window by right-clicking the terminal and selecti
    Download and install Git from [here](https://git-scm.com/downloads/win)
 
 3. **uv for Windows**\
+   Open the Command Prompt as an administrator by right-clicking the terminal icon and selecting Run as administrator.\
    Steps to install `uv` are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.
    ```
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
 ### For Linux:
+   For Linux: Open a new terminal window by right-clicking the terminal and selecting New Window.
 1. **GPU Drivers installation**\
    Download and install the GPU drivers from [here](https://dgpu-docs.intel.com/driver/client/overview.html)
 
