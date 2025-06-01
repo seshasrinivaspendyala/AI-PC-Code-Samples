@@ -5,7 +5,7 @@ For each video, a description is generated and stored as an embedding in ChromaD
 This sample supports sports-related queries and uses a subset of videos from the [**Sports Videos in the Wild (SVW)**](https://cvlab.cse.msu.edu/project-svw.html) dataset. For more information on the dataset and citation requirements, please refer to the [**Sports Videos in the Wild (SVW) dataset paper**](https://cvlab.cse.msu.edu/project-svw.html#:~:text=SVW%20Download,Bibtex%20%7C%20PDF).
 
 ## Table of Contents
-1. Video Description Generation and Query Retrieval Workflow
+1. Workflow
 2. Sample Structure
 3. Prerequisites
 4. Installing Prerequisites and Setting Up the Environment
@@ -14,7 +14,7 @@ This sample supports sports-related queries and uses a subset of videos from the
 5. Running the Sample
 6. Sample Execution Output
 
-## Video Description Generation and Query Retrieval Workflow
+## Workflow
 - During the initial data load, a subset of videos from the [Sports Videos in the Wild (SVW)](https://cvlab.cse.msu.edu/project-svw.html) dataset is fed into the [Qwen 2.5 Vision-Language model](https://github.com/QwenLM/Qwen2.5-VL).
 - Here, the [Qwen2.5-VL-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct) model variant is used to process these videos and generate descriptions. The Qwen 2.5 Vision-Language model is loaded using the [PyTorch XPU backend](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.
 - Next, the generated video descriptions are converted into embeddings using [Sentence Transformers](https://sbert.net/), with the [all-MiniLM-L6-v2 model](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
