@@ -71,23 +71,23 @@ To install any software using commands, Open a new terminal window by right-clic
    Download and install the GPU drivers from [here](https://dgpu-docs.intel.com/driver/client/overview.html)
 
 2. **Dependencies on Linux**\
-   Install Git using the following commands:
+   Install Curl, Wget, Git using the following commands:
    - For Debian/Ubuntu-based systems:
    ```
-   sudo apt update && sudo apt -y install git
+   sudo apt update && sudo apt -y install curl wget git
    ```
    - For RHEL/CentOS-based systems:
    ```
-   sudo dnf update && sudo dnf -y install git
+   sudo dnf update && sudo dnf -y install curl wget git
    ```
+
 3. **uv for Linux**\
-   Steps to install `uv` are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.\
-   Use curl to download the script and execute it with sh:
+   Steps to install uv are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.\
+   - If you want to use curl to download the script and execute it with sh:
    ```
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
-   
-   If your system doesn't have curl, you can use wget:
+   - If you want to use wget to download the script and execute it with sh:
    ```
    wget -qO- https://astral.sh/uv/install.sh | sh
    ```
