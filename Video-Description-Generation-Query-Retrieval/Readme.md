@@ -38,11 +38,11 @@ This sample supports sports-related queries and uses a subset of videos from the
 
 ## Prerequisites
 
-| Component      | Recommended                                             |
-| -------------- | ------------------------------------------------------- |
-| Operating System(OS)             | Windows 11 or later/ Ubuntu 20.04 or later                    |
-| Random-access memory(RAM)          | 32 GB                                                   |
-| Hardware | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, Intel Graphics, Intel® Xeon® Processor, Intel® Data Center GPU Max Series |
+|    Component   |   Recommended   |
+|   ------   |   ------   |
+|   Operating System(OS)   |   Windows 11 or later/ Ubuntu 20.04 or later   |
+|   Random-access memory(RAM)   |   32 GB   |
+|   Hardware   |   Intel® Core™ Ultra Processors, Intel Arc™ Graphics, Intel Graphics, Intel® Xeon® Processor, Intel® Data Center GPU Max Series   |
 
 
 ## Installing Prerequisites and Setting Up the Environment
@@ -56,6 +56,10 @@ Install the following software.
    Download and install Git from [here](https://git-scm.com/downloads/win)
 
 3. **uv for Windows**\
+   Steps to install `uv` are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.
+   ```
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
 
 ### Linux:
 1. **GPU Drivers installation**\
@@ -71,21 +75,19 @@ Install the following software.
    ```
    sudo dnf update && sudo dnf -y install git
    ```
+3. **uv for Linux**\
+   Steps to install `uv` are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.
+   Use curl to download the script and execute it with sh:
+   ```
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+   
+   If your system doesn't have curl, you can use wget:
+   ```
+   wget -qO- https://astral.sh/uv/install.sh | sh
+   ```
 
 ## Run the `Video Description Generation and Query Retrieval` Sample:
-
-### Using `uv`:
-> 
-> </br> **Linux:** </br>
-> </br> Use curl to download the script and execute it with sh:
-> ```bash
-> curl -LsSf https://astral.sh/uv/install.sh | sh
-> ```
->
-> </br> If your system doesn't have curl, you can use wget:
-> ```bash
-> wget -qO- https://astral.sh/uv/install.sh | sh
-> ```
    
 1. In a terminal, navigate to `Video-Description-Generation-Query-Retrieval` folder:
    ```
