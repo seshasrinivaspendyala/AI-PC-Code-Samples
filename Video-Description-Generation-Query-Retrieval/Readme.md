@@ -76,7 +76,7 @@ Install the following software.
    sudo dnf update && sudo dnf -y install git
    ```
 3. **uv for Linux**\
-   Steps to install `uv` are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.
+   Steps to install `uv` are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.\
    Use curl to download the script and execute it with sh:
    ```
    curl -LsSf https://astral.sh/uv/install.sh | sh
