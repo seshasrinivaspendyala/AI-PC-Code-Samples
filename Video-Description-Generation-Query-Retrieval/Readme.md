@@ -87,7 +87,7 @@ Install the following software.
    wget -qO- https://astral.sh/uv/install.sh | sh
    ```
 
-## Run the `Video Description Generation and Query Retrieval` Sample:
+## Run the Sample:
    
 1. In a terminal, navigate to `Video-Description-Generation-Query-Retrieval` folder:
    ```
@@ -95,7 +95,6 @@ Install the following software.
    ```
    
 2. Launch Jupyter Notebook
-
    ```
    uv run jupyter lab
    ```
@@ -103,3 +102,5 @@ Install the following software.
    ```
    uv clean
    ```
+
+## Sample Execution Output:
