@@ -13,8 +13,8 @@ This sample supports sports-related queries and uses a subset of videos from the
 4. Installing Prerequisites and Setting Up the Environment
    - For Windows
    - For Linux
-5. Running the Sample
-6. Sample Execution Output
+5. Running the Sample and execution output
+6. Dataset Citations
 
 ## Workflow
 
@@ -92,7 +92,7 @@ To install any software using commands, Open a new terminal window by right-clic
    wget -qO- https://astral.sh/uv/install.sh | sh
    ```
 
-## Run the Sample
+## Running the Sample and execution output
    
 1. In the Command Prompt/terminal, navigate to `Video-Description-Generation-Query-Retrieval` folder after cloning the sample:
    ```
@@ -116,4 +116,12 @@ To install any software using commands, Open a new terminal window by right-clic
    uv clean
    ```
 
-## Sample Execution Output
+## Dataset Citations
+
+If you use SVW dataset, please refer to this paper in your publications:
+
+### Publications:
+- [**Sports Videos in the Wild (SVW): A Video Dataset for Sports Analysis**](https://cvlab.cse.msu.edu/project-svw.html)\
+[**Seyed Morteza Safdarnejad**](https://cvlab.cse.msu.edu/author/seyed-morteza-safdarnejad.html), [**Xiaoming Liu**](https://cvlab.cse.msu.edu/author/xiaoming-liu.html), [**Lalita Udpa**](https://cvlab.cse.msu.edu/author/lalita-udpa.html), [**Brooks Andrus**](https://cvlab.cse.msu.edu/author/brooks-andrus.html), [**John Wood**](https://cvlab.cse.msu.edu/author/john-wood.html), [**Dean Craven**](https://cvlab.cse.msu.edu/author/dean-craven.html)\
+Proc. International Conference on Automatic Face and Gesture Recognition (FG 2015), Ljubljana, Slovenia, May. 2015 (Acceptance rate 84/221 = 38%)\
+[**Bibtex**](https://cvlab.cse.msu.edu/project-svw.html#bibtex-sports-videos-in-the-wild-svw-a-video-dataset-for-sports-analysis) | [**PDF**](https://cvlab.cse.msu.edu/pdfs/Morteza_FG2015.pdf)
