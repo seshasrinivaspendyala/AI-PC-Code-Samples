@@ -82,7 +82,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
 
 3. **uv for Linux**\
-   Steps to install uv are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.\
+   Steps to install uv are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.
    - If you want to use curl to download the script and execute it with sh:
    ```
    curl -LsSf https://astral.sh/uv/install.sh | sh
