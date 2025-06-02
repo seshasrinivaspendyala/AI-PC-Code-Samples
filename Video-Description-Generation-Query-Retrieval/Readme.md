@@ -117,7 +117,7 @@ To install any software using commands, Open a new terminal window by right-clic
    uv clean
    ```
    - GPU utilization can be seen in the Task Manager while generating video descriptions for videos which are processing on Intel XPUs.
-   ![Generating_video_descriptions_using_Pytorch_XPU](./Generating_video_descriptions_using_Pytorch_XPU.png)
+   ![Generating_video_descriptions_using_Pytorch_XPU](./assets/Generating_video_descriptions_using_Pytorch_XPU.png)
 
 ## Dataset Citations
 
