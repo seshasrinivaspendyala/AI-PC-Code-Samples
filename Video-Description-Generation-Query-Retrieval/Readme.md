@@ -51,7 +51,7 @@ This sample supports sports-related queries and uses a subset of videos from the
 ## Installing Prerequisites and Setting Up the Environment
 
 ### For Windows:
-To install any software using commands, Open the Command Prompt as an administrator by right-clicking the terminal icon and selecting Run as administrator.
+To install any software using commands, Open the Command Prompt as an administrator by right-clicking the terminal icon and selecting `Run as administrator`.
 1. **GPU Drivers installation**\
    Download and install the Intel® Graphics Driver for Intel® Arc™ B-Series, A-Series, Intel® Iris® Xe Graphics, and Intel® Core™ Ultra Processors with Intel® Arc™ Graphics from [here](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)\
    **IMPORTANT:** Reboot the system after the installation.
@@ -64,9 +64,10 @@ To install any software using commands, Open the Command Prompt as an administra
    ```
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
-
+   **NOTE:** Close and reopen the Command Prompt to recognize uv.
+   
 ### For Linux:
-To install any software using commands, Open a new terminal window by right-clicking the terminal and selecting New Window.
+To install any software using commands, Open a new terminal window by right-clicking the terminal and selecting `New Window`.
 1. **GPU Drivers installation**\
    Download and install the GPU drivers from [here](https://dgpu-docs.intel.com/driver/client/overview.html)
 
