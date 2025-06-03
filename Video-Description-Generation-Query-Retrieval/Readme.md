@@ -121,7 +121,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ![Generating_video_descriptions_using_Pytorch_XPU](./assets/Generating_video_descriptions_using_Pytorch_XPU.png)
 
 4. Relevant video will be displayed based on user query.
-   ![](./)
+   ![Video_display](./Video_display.png)
 
 
 ## Dataset Citations
