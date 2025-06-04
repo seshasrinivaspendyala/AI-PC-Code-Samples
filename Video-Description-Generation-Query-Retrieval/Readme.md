@@ -94,6 +94,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
    wget -qO- https://astral.sh/uv/install.sh | sh
    ```
+   **NOTE:** Close and reopen the Terminal to recognize uv.
 
 ## Running the Sample and execution output
    
