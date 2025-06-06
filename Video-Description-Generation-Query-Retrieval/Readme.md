@@ -9,8 +9,8 @@ This sample supports sports-related queries and uses a subset of videos from the
 
 ## Table of Contents
 
-- [Workflow](#workflow)
 - [Architecture](#architecture)
+- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Installing Prerequisites && Setting Up the Environment](#installing-prerequisites--setting-up-the-environment)
    - [For Windows](#for-windows)
