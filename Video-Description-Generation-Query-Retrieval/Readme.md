@@ -43,7 +43,7 @@ This sample supports sports-related queries and uses a subset of videos from the
     │   ├── Video_description_generation_and_query_retrieval_workflow.jpg  # Workflow image
     │   └── Video_display.png                                              # Output screenshot image 2
     ├── Readme.md                                                          # Readme file which contains all the details and instructions about the project sample
-    ├── SVW_subset_video_dataset.zip                                       # ZIP file which contains subset videos of the Sport videos in the wild
+    ├── SVW_subset_video_dataset.zip                                       # ZIP file which contains subset videos of the Sport videos in the wild dataset
     ├── Video_Description_Generation_Query_Retrieval.ipynb                 # Notebook file to excute the project sample
     ├── pyproject.toml                                                     # Requirements for the project sample
     └── uv.lock                                                            # File which captures the packages installed for the project sample
