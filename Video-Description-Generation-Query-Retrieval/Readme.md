@@ -10,15 +10,13 @@ This sample supports sports-related queries and uses a subset of videos from the
 ## Table of Contents
 
 1. [Workflow](#workflow)
-2. [Sample Structure](#project-structure)
+2. [Project Structure](#project-structure)
 3. [Prerequisites](#prerequisites)
 4. [Installing Prerequisites && Setting Up the Environment](#installing-prerequisites--setting-up-the-environment)
    - [For Windows](#for-windows)
    - [For Linux](#for-linux)
 5. [Running the Sample && execution output](#running-the-sample--execution-output)
 6. [Dataset Citations](#dataset-citations)
-
----
 
 ## Workflow
 
@@ -30,6 +28,8 @@ This sample supports sports-related queries and uses a subset of videos from the
 - The final result will be the most relevant video description and its associated video file name, and the video is displayed directly in the notebook.
 
 ![How it works](./assets/Video_description_generation_and_query_retrieval_workflow.jpg)
+
+---
 
 ## Project Structure
 
