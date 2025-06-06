@@ -16,7 +16,9 @@ This sample supports sports-related queries and uses a subset of videos from the
    - [For Windows](#for-windows)
    - [For Linux](#for-linux)
 - [Running the Sample && execution output](#running-the-sample--execution-output)
+- [Troubleshooting](#troubleshooting)
 - [Dataset Citations](#dataset-citations)
+- [License](#license)
 
 ---
 
@@ -138,6 +140,13 @@ To install any software using commands, Open a new terminal window by right-clic
 
 ---
 
+## Troubleshooting
+
+- **Dependency Issues:** Run `uv clean` and then `uv sync`.
+- **File Access Issues:** Restart the kernel and run the cell again.
+
+---
+
 ## Dataset Citations
 
 If you use SVW dataset, please refer to this paper in your publications:
@@ -147,3 +156,8 @@ If you use SVW dataset, please refer to this paper in your publications:
 [**Seyed Morteza Safdarnejad**](https://cvlab.cse.msu.edu/author/seyed-morteza-safdarnejad.html), [**Xiaoming Liu**](https://cvlab.cse.msu.edu/author/xiaoming-liu.html), [**Lalita Udpa**](https://cvlab.cse.msu.edu/author/lalita-udpa.html), [**Brooks Andrus**](https://cvlab.cse.msu.edu/author/brooks-andrus.html), [**John Wood**](https://cvlab.cse.msu.edu/author/john-wood.html), [**Dean Craven**](https://cvlab.cse.msu.edu/author/dean-craven.html)\
 Proc. International Conference on Automatic Face and Gesture Recognition (FG 2015), Ljubljana, Slovenia, May. 2015 (Acceptance rate 84/221 = 38%)\
 [**Bibtex**](https://cvlab.cse.msu.edu/project-svw.html#bibtex-sports-videos-in-the-wild-svw-a-video-dataset-for-sports-analysis) | [**PDF**](https://cvlab.cse.msu.edu/pdfs/Morteza_FG2015.pdf)
+
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](../LICENSE) for details.
