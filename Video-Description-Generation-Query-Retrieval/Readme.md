@@ -10,7 +10,7 @@ This sample supports sports-related queries and uses a subset of videos from the
 ## Table of Contents
 
 - [Workflow](#workflow)
-- [Project Structure](#project-structure)
+- [Architecture](#architecture)
 - [Prerequisites](#prerequisites)
 - [Installing Prerequisites && Setting Up the Environment](#installing-prerequisites--setting-up-the-environment)
    - [For Windows](#for-windows)
@@ -20,7 +20,7 @@ This sample supports sports-related queries and uses a subset of videos from the
 
 ---
 
-## Workflow
+## Architecture
 
 - During the initial data load, a subset of videos from the [Sports Videos in the Wild (SVW)](https://cvlab.cse.msu.edu/project-svw.html) dataset is fed into the [Qwen 2.5 Vision-Language model](https://github.com/QwenLM/Qwen2.5-VL).
 - Here, the [Qwen2.5-VL-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct) model variant is used to process these videos and generate descriptions. The Qwen 2.5 Vision-Language model is loaded using the [PyTorch XPU backend](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) to leverage Intel hardware acceleration.
