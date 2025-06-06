@@ -157,6 +157,7 @@ If you use SVW dataset, please refer to this paper in your publications:
 Proc. International Conference on Automatic Face and Gesture Recognition (FG 2015), Ljubljana, Slovenia, May. 2015 (Acceptance rate 84/221 = 38%)\
 [**Bibtex**](https://cvlab.cse.msu.edu/project-svw.html#bibtex-sports-videos-in-the-wild-svw-a-video-dataset-for-sports-analysis) | [**PDF**](https://cvlab.cse.msu.edu/pdfs/Morteza_FG2015.pdf)
 
+---
 
 ## License
 
