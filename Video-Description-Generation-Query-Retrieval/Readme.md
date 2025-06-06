@@ -9,14 +9,14 @@ This sample supports sports-related queries and uses a subset of videos from the
 
 ## Table of Contents
 
-1. [Workflow](#workflow)
-2. [Project Structure](#project-structure)
-3. [Prerequisites](#prerequisites)
-4. [Installing Prerequisites && Setting Up the Environment](#installing-prerequisites--setting-up-the-environment)
-   4.1. [For Windows](#for-windows)
-   4.2. [For Linux](#for-linux)
-5. [Running the Sample && execution output](#running-the-sample--execution-output)
-6. [Dataset Citations](#dataset-citations)
+- [Workflow](#workflow)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installing Prerequisites && Setting Up the Environment](#installing-prerequisites--setting-up-the-environment)
+   - [For Windows](#for-windows)
+   - [For Linux](#for-linux)
+- [Running the Sample && execution output](#running-the-sample--execution-output)
+- [Dataset Citations](#dataset-citations)
 
 ---
 
