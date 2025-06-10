@@ -31,7 +31,7 @@ This sample supports sports-related queries and uses a subset of videos from the
 - When a user submits a query, the text is similarly encoded into an embedding, which is then used to perform a semantic search (via cosine similarity) over the ChromaDB collection.
 - The final result will be the most relevant video description and its associated video file name, and the video is displayed directly in the notebook.
 
-![How it works](./assets/Video_description_generation_and_query_retrieval_workflow.jpg)
+![How it works](./assets/Video_description_generation_and_query_retrieval_workflow.png)
 
 ---
 
