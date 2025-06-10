@@ -75,7 +75,9 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 # Switch to non-root user
 USER user
 
-ENTRYPOINT ["/bin/bash", "-c", "source /opt/intel/oneapi/setvars.sh && exec \"$@\"", "--"]
-CMD ["uv", "run", "python", "-m", "llama_cpp.server", "--hf_model_repo_id", "Qwen/Qwen2-0.5B-Instruct-GGUF", "--model", "*q8_0.gguf", "--n_gpu_layers", "-1"]
+# ENTRYPOINT ["/bin/bash", "-c", "source /opt/intel/oneapi/setvars.sh && exec \"$@\"", "--"]
+# CMD ["uv", "run", "python", "-m", "llama_cpp.server", "--hf_model_repo_id", "Qwen/Qwen2-0.5B-Instruct-GGUF", "--model", "*q8_0.gguf", "--n_gpu_layers", "-1"]
+ENTRYPOINT ["/bin/bash", "-c", "source /opt/intel/oneapi/setvars.sh && uv run python -m llama_cpp.server \"$@\"", "--"]
+CMD ["--hf_model_repo_id", "Qwen/Qwen2-0.5B-Instruct-GGUF", "--model", "*q8_0.gguf", "--n_gpu_layers", "-1"]
 
 # CMD ["/bin/bash"]
