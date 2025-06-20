@@ -43,7 +43,6 @@ This sample uses the videos from the [**stepfun-ai/Step-Video-T2V-Eval**](https:
     │   ├── Video_description_generation_and_query_retrieval_workflow.jpg  # Workflow image
     │   └── Video_display.png                                              # Output screenshot image 2
     ├── Readme.md                                                          # Readme file which contains all the details and instructions about the project sample
-    ├── SVW_subset_video_dataset.zip                                       # ZIP file which contains subset videos of the Sport videos in the wild dataset
     ├── Video_Description_Generation_Query_Retrieval.ipynb                 # Notebook file to excute the project sample
     ├── pyproject.toml                                                     # Requirements for the project sample
     └── uv.lock                                                            # File which captures the packages installed for the project sample
@@ -115,7 +114,20 @@ To install any software using commands, Open a new terminal window by right-clic
    cd <path/to/Video-Description-Generation-Query-Retrieval/folder>
    ```
    
-2. Launch Jupyter Lab and Run the notebook:\
+2. Log in to Hugging Face, generate a token, and download the required models and datasets:
+   `huggingface-cli` lets you interact directly with the Hugging Face Hub from a terminal. Log in to [Huggingface](https://huggingface.co/) with your credentials. You need a [User Access Token](https://huggingface.co/docs/hub/security-tokens) from your [Settings page](https://huggingface.co/settings/tokens). The User Access Token is used to authenticate your identity to the Hub.\
+   Once you have your token, run the following command in your terminal.
+   ```
+   uv run huggingface-cli login
+   ```
+   This command will prompt you for a token. Copy-paste yours and press Enter.
+   ```
+   uv run huggingface-cli download Qwen/Qwen2.5-VL-3B-Instruct
+   uv run huggingface-cli download sentence-transformers/all-MiniLM-L6-v2
+   uv run huggingface-cli download stepfun-ai/Step-Video-T2V-Eval --repo-type dataset --local-dir ./Step-Video-T2V-Eval
+   ```
+
+3. Launch Jupyter Lab and Run the notebook:\
    Open the [Video Description Generation Query Retrieval](./Video_Description_Generation_Query_Retrieval.ipynb) notebook in the Jupyter Lab.
    - In the Jupyter Lab go to the kernel menu in the top-right corner of the notebook interface and choose default kernel i.e. `Python 3 (ipykernel)` from the available kernels list and run the code cells one by one in the notebook.
    ```
@@ -132,10 +144,10 @@ To install any software using commands, Open a new terminal window by right-clic
    uv clean
    ```
 
-3. GPU utilization can be seen in the Task Manager while generating video descriptions for videos which are processing on Intel XPUs.
+4. GPU utilization can be seen in the Task Manager while generating video descriptions for videos which are processing on Intel XPUs.
    ![Generating_video_descriptions_using_Pytorch_XPU](./assets/Generating_video_descriptions_using_Pytorch_XPU.png)
 
-4. Relevant video will be displayed based on user query.
+5. Relevant video will be displayed based on user query.
    ![Video_display](./assets/Video_display.png)
 
 ---
@@ -149,13 +161,15 @@ To install any software using commands, Open a new terminal window by right-clic
 
 ## Dataset Citations
 
-If you use SVW dataset, please refer to this paper in your publications:
-
-### Publications:
-- [**Sports Videos in the Wild (SVW): A Video Dataset for Sports Analysis**](https://cvlab.cse.msu.edu/project-svw.html)\
-[**Seyed Morteza Safdarnejad**](https://cvlab.cse.msu.edu/author/seyed-morteza-safdarnejad.html), [**Xiaoming Liu**](https://cvlab.cse.msu.edu/author/xiaoming-liu.html), [**Lalita Udpa**](https://cvlab.cse.msu.edu/author/lalita-udpa.html), [**Brooks Andrus**](https://cvlab.cse.msu.edu/author/brooks-andrus.html), [**John Wood**](https://cvlab.cse.msu.edu/author/john-wood.html), [**Dean Craven**](https://cvlab.cse.msu.edu/author/dean-craven.html)\
-Proc. International Conference on Automatic Face and Gesture Recognition (FG 2015), Ljubljana, Slovenia, May. 2015 (Acceptance rate 84/221 = 38%)\
-[**Bibtex**](https://cvlab.cse.msu.edu/project-svw.html#bibtex-sports-videos-in-the-wild-svw-a-video-dataset-for-sports-analysis) | [**PDF**](https://cvlab.cse.msu.edu/pdfs/Morteza_FG2015.pdf)
+    @misc{ma2025stepvideot2vtechnicalreportpractice,  
+      title={Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model}, 
+      author={Guoqing Ma and Haoyang Huang and Kun Yan and Liangyu Chen and Nan Duan and Shengming Yin and Changyi Wan and Ranchen Ming and Xiaoniu Song and Xing Chen and Yu Zhou and Deshan Sun and Deyu Zhou and Jian Zhou and Kaijun Tan and Kang An and Mei Chen and Wei Ji and Qiling Wu and Wen Sun and Xin Han and Yanan Wei and Zheng Ge and Aojie Li and Bin Wang and Bizhu Huang and Bo Wang and Brian Li and Changxing Miao and Chen Xu and Chenfei Wu and Chenguang Yu and Dapeng Shi and Dingyuan Hu and Enle Liu and Gang Yu and Ge Yang and Guanzhe Huang and Gulin Yan and Haiyang Feng and Hao Nie and Haonan Jia and Hanpeng Hu and Hanqi Chen and Haolong Yan and Heng Wang and Hongcheng Guo and Huilin Xiong and Huixin Xiong and Jiahao Gong and Jianchang Wu and Jiaoren Wu and Jie Wu and Jie Yang and Jiashuai Liu and Jiashuo Li and Jingyang Zhang and Junjing Guo and Junzhe Lin and Kaixiang Li and Lei Liu and Lei Xia and Liang Zhao and Liguo Tan and Liwen Huang and Liying Shi and Ming Li and Mingliang Li and Muhua Cheng and Na Wang and Qiaohui Chen and Qinglin He and Qiuyan Liang and Quan Sun and Ran Sun and Rui Wang and Shaoliang Pang and Shiliang Yang and Sitong Liu and Siqi Liu and Shuli Gao and Tiancheng Cao and Tianyu Wang and Weipeng Ming and Wenqing He and Xu Zhao and Xuelin Zhang and Xianfang Zeng and Xiaojia Liu and Xuan Yang and Yaqi Dai and Yanbo Yu and Yang Li and Yineng Deng and Yingming Wang and Yilei Wang and Yuanwei Lu and Yu Chen and Yu Luo and Yuchu Luo and Yuhe Yin and Yuheng Feng and Yuxiang Yang and Zecheng Tang and Zekai Zhang and Zidong Yang and Binxing Jiao and Jiansheng Chen and Jing Li and Shuchang Zhou and Xiangyu Zhang and Xinhao Zhang and Yibo Zhu and Heung-Yeung Shum and Daxin Jiang},
+      year={2025},
+      eprint={2502.10248},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.10248}, 
+      }
 
 ---
 
