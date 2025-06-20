@@ -133,7 +133,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
    uv run jupyter lab
    ```
-   - If you are running the sample in the [Intel Tiber AI Cloud(ITAC)](https://console.cloud.intel.com/home), follow these steps in a new terminal session. Create and select the `uv_env` Jupyter kernel to get access to required python packages in the notebook.
+   - If you are running the sample in the [Intel Tiber AI Cloud(ITAC)](https://ai.cloud.intel.com/), follow these steps in a new terminal session. Create and select the `uv_env` Jupyter kernel to get access to required python packages in the notebook.
    ```
    uv sync
    uv run python -m ipykernel install --user --name=uv_env --display-name="uv_env"
