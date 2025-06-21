@@ -61,8 +61,8 @@ Please find the some of the keywords below used in the prompts.
 **Sports** --> Soccer, basketball, tennis, running, badminton, table tennis, Dumbells lifting, Golf, Skateboard, skiers gliding, Water surfer, sand pit jump.\
 **Food** --> Sliced meat, French roast, Spaghetti, Sushi, Naan with Chicken, Taco, Pad thai, Fish with vegetables, Grilled kebab, Burgers, Kebab.\
 **Scenery** --> Mountains, Blue ocean, Waterfall, Towers, Kremlin wall, Sailboat, Buildings, Modern city, sunset, river, hills.\
-**Animals** --> Lion, Dog, Birds, Dolphins, Elephant, sharks, Snake, Butterfly, Kangaroo, penguins, cheetah, Kitten.\
-**Festivals** -> Christmas, lantern, Halloween.\
+**Animals** -> Lion, Dog, Birds, Dolphins, Elephant, sharks, Snake, Butterfly, Kangaroo, penguins, cheetah, Kitten.\
+**Festivals** => Christmas, lantern, Halloween.\
 **Combination concepts, Surreal, People, 3D Animation, Cinematography, Style**\
 
 ---
