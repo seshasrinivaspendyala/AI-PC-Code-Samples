@@ -173,7 +173,7 @@ To install any software using commands, Open a new terminal window by right-clic
 ## Troubleshooting
 
 - **Dependency Issues:** Run `uv clean` and then `uv sync`.
-- **File Access Issues:** Restart the kernel and run the cell again.
+- **File Access Issues:** Restart the kernel and run the cells again.
 
 ---
 
