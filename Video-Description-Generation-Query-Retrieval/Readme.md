@@ -50,7 +50,7 @@ This sample uses the videos from the [**stepfun-ai/Step-Video-T2V-Eval**](https:
 
 ---
 
-## Dataset details
+## Dataset Details
 
 In this project sample, we are going to use [Step-Video-T2V-Eval](https://huggingface.co/datasets/stepfun-ai/Step-Video-T2V-Eval) Hugging Face dataset which has **128 videos**. 
 Step-Video-T2V Eval benchmark features 128 prompts. This benchmark is designed to evaluate the quality of generated videos across 11 distinct categories:\
