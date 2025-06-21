@@ -52,17 +52,17 @@ This sample uses the videos from the [**stepfun-ai/Step-Video-T2V-Eval**](https:
 
 ## Dataset details
 
-In this project sample, we are going to use Step-Video-T2V-Eval dataset which has 128 videos. 
-Step-Video-T2V Eval benchmark features 128 prompts. This benchmark is designed to evaluate the quality of generated videos across 11 distinct categories:
-Sports, Food, Scenery, Animals, Festivals, Combination Concepts, Surreal, People, 3D Animation, Cinematography, and Style.
-Please find the some of the keywords below used in the prompts.
+In this project sample, we are going to use [Step-Video-T2V-Eval](https://huggingface.co/datasets/stepfun-ai/Step-Video-T2V-Eval) Hugging Face dataset which has **128 videos**. 
+Step-Video-T2V Eval benchmark features 128 prompts. This benchmark is designed to evaluate the quality of generated videos across 11 distinct categories:\
+Sports, Food, Scenery, Animals, Festivals, Combination Concepts, Surreal, People, 3D Animation, Cinematography, and Style.\
+Please find the some of the keywords below used in the prompts.\
 
-Sports -> Soccer, basketball, tennis, running, badminton, table tennis, Dumbells lifting, Golf, Skateboard, skiers gliding, Water surfer, sand pit jump.
-Food -> Sliced meat, French roast, Spaghetti, Sushi, Naan with Chicken, Taco, Pad thai, Fish with vegetables, Grilled kebab, Burgers, Kebab,  
-Scenery -> Mountains, Blue ocean, Waterfall, Towers, Kremlin wall, Sailboat, Buildings, Modern city, sunset, river, hills
-Animals -> Lion, Dog, Birds, Dolphins, Elephant, sharks, Snake, Butterfly, Kangaroo, penguins, cheetah, Kitten,
-Festivals -> Christmas, lantern, Halloween
-Combination concepts, Surreal, People, 3D Animation, Cinematography, Style
+**Sports** -> Soccer, basketball, tennis, running, badminton, table tennis, Dumbells lifting, Golf, Skateboard, skiers gliding, Water surfer, sand pit jump,\
+**Food** -> Sliced meat, French roast, Spaghetti, Sushi, Naan with Chicken, Taco, Pad thai, Fish with vegetables, Grilled kebab, Burgers, Kebab,\
+**Scenery** -> Mountains, Blue ocean, Waterfall, Towers, Kremlin wall, Sailboat, Buildings, Modern city, sunset, river, hills,\
+**Animals** -> Lion, Dog, Birds, Dolphins, Elephant, sharks, Snake, Butterfly, Kangaroo, penguins, cheetah, Kitten,\
+**Festivals** -> Christmas, lantern, Halloween,\
+**Combination concepts, Surreal, People, 3D Animation, Cinematography, Style**
 
 ---
 
