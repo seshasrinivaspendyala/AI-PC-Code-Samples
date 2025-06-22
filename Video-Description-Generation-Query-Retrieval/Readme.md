@@ -56,7 +56,7 @@ In this project sample, we are going to use [Step-Video-T2V-Eval](https://huggin
 Step-Video-T2V Eval benchmark features 128 prompts. This benchmark is designed to evaluate the quality of generated videos across 11 distinct categories.
 They are Sports, Food, Scenery, Animals, Festivals, Combination Concepts, Surreal, People, 3D Animation, Cinematography, and Style.
 
-Please find the some of the keywords below used in the prompts.
+Please find the some of the keywords below used in the prompts across 11 different categories.
 
 **Sports** --> Soccer, basketball, tennis, running, badminton, table tennis, Dumbells lifting, Golf, Skateboard, skiers gliding, Water surfer, sand pit jump.\
 **Food** --> Sliced meat, French roast, Spaghetti, Sushi, Naan with Chicken, Taco, Pad thai, Fish with vegetables, Grilled kebab, Burgers, Kebab.\
