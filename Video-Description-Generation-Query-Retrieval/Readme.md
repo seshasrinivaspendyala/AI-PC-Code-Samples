@@ -157,11 +157,6 @@ To install any software using commands, Open a new terminal window by right-clic
    uv run python -m ipykernel install --user --name=uv_env --display-name="uv_env"
    ```
 
-   **NOTE:** Run the below command if you face any dependency issues:
-   ```
-   uv clean
-   ```
-
 4. GPU utilization can be seen in the Task Manager while generating video descriptions for videos which are processing on Intel XPUs.
    ![Generating_video_descriptions_using_Pytorch_XPU](./assets/Generating_video_descriptions_using_Pytorch_XPU.png)
 
