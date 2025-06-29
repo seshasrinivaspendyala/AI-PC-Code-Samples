@@ -11,7 +11,9 @@ This repository provides a Dockerfile to build a containerized environment for r
   - [Mount a Local Directory and Run a Model from It](#mount-a-local-directory-and-run-a-model-from-it)
 - [Notes](#notes)
 - [License](#license)
-  
+
+--
+
 ## Features
 - **Intel GPU support**: Installs [Intel GPU drivers](https://dgpu-docs.intel.com/driver/client/overview.html) and [oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html) for SYCL acceleration.
 - **llama-cpp-python**: Builds and installs with Intel SYCL support for fast inference.
