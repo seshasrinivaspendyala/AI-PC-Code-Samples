@@ -50,7 +50,7 @@ docker run -it --rm \
 - `--device /dev/dri` exposes the Intel GPU to the container.
 - `-p 8000:8000` maps the server port.
 
-## Custom Model or Arguments
+### Custom Model or Arguments
 
 The default model and arguments can be overridden as needed:
 
@@ -63,7 +63,7 @@ docker run -it --rm \
     --hf_model_repo_id <hf-repo> --model <model-file>
 ```
 
-## Mount a Local Directory and Run a Model from It
+### Mount a Local Directory and Run a Model from It
 
 To use a model file stored on the host machine, mount the directory containing the model into the container and specify the path to the model file. For example, if the model is located in `/path/to/models` on the host:
 
