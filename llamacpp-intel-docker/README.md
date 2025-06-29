@@ -5,11 +5,12 @@ This repository provides a Dockerfile to build a containerized environment for r
 ## Table of Contents
 
 - [Features](#features)
-- [Build the Docker Image](#build-the-docker-image)
-- [Run the Container](#run-the-container)
+- [Build the docker image](#build-the-docker-image)
+- [Run the container](#run-the-container)
   - [Default container](#default-container)
-  - [Custom Model or Arguments](#custom-model-or-arguments)
-  - [Mount a Local Directory and Run a Model from It](#mount-a-local-directory-and-run-a-model-from-it)
+  - [Custom model or arguments](#custom-model-or-arguments)
+  - [Mount a local directory and run a model from it](#mount-a-local-directory-and-run-a-model-from-it)
+  - [Run bash shell in the container](#run-bash-shell-in-the-container)
 - [Notes](#notes)
 - [License](#license)
 
@@ -50,7 +51,7 @@ docker run -it --rm \
 - `--device /dev/dri` exposes the Intel GPU to the container.
 - `-p 8000:8000` maps the server port.
 
-### Custom Model or Arguments
+### Custom model or arguments
 
 The default model and arguments can be overridden as needed:
 
@@ -63,7 +64,7 @@ docker run -it --rm \
 	--hf_model_repo_id <hf-repo> --model <model-file>
 ```
 
-### Mount a Local Directory and Run a Model from It
+### Mount a local directory and run a model from it
 
 To use a model file stored on the host machine, mount the directory containing the model into the container and specify the path to the model file. For example, if the model is located in `/path/to/models` on the host:
 
@@ -82,7 +83,7 @@ docker run -it --rm \
 
 This approach can be combined with other arguments as needed.
 
-### Run Bash Shell in the container
+### Run bash shell in the container
 
 To override the entry point and start the container with the bash shell, run the following command:
 ```sh
