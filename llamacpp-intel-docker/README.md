@@ -22,7 +22,7 @@ docker build -t llamacpp-intel-sycl:latest .
 To run the server with a default HuggingFace model (Qwen/Qwen2-0.5B-Instruct-GGUF):
 
 ```sh
-docker run --rm \
+docker run -it --rm \
     --device /dev/dri \
     -p 8000:8000 \
     llamacpp-intel-sycl:latest
