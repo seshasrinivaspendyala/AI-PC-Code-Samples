@@ -12,7 +12,7 @@ This repository provides a Dockerfile to build a containerized environment for r
 - [Notes](#notes)
 - [License](#license)
 
---
+---
 
 ## Features
 - **Intel GPU support**: Installs [Intel GPU drivers](https://dgpu-docs.intel.com/driver/client/overview.html) and [oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html) for SYCL acceleration.
