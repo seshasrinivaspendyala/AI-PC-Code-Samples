@@ -36,7 +36,7 @@ docker build -t llamacpp-intel-sycl:latest .
 
 ## Run the Container
 
-### Default container:
+### Default container
 
 To run the server with a default HuggingFace model (Qwen/Qwen2-0.5B-Instruct-GGUF):
 
@@ -50,7 +50,7 @@ docker run -it --rm \
 - `--device /dev/dri` exposes the Intel GPU to the container.
 - `-p 8000:8000` maps the server port.
 
-### Custom Model or Arguments:
+### Custom Model or Arguments
 
 The default model and arguments can be overridden as needed:
 
@@ -63,7 +63,7 @@ docker run -it --rm \
     --hf_model_repo_id <hf-repo> --model <model-file>
 ```
 
-### Mount a Local Directory and Run a Model from It:
+### Mount a Local Directory and Run a Model from It
 
 To use a model file stored on the host machine, mount the directory containing the model into the container and specify the path to the model file. For example, if the model is located in `/path/to/models` on the host:
 
@@ -82,13 +82,23 @@ docker run -it --rm \
 
 This approach can be combined with other arguments as needed.
 
+### Run Bash Shell in the container
+
+To override the entry point and start the container with the bash shell, run the following command:
+```sh
+docker run -it --rm \
+    --device=/dev/dri \
+    --net host \
+    llamacpp-intel-sycl:latest \
+    --entrypoint /bin/bash
+```
 ---
 
 ## Notes
 - Make sure your host system has an Intel GPU and the necessary drivers installed.
 - For more information about supported models, server options, and how to call inference endpoints, see the [llama-cpp-python OpenAI Server documentation](https://llama-cpp-python.readthedocs.io/en/latest/server/).
 - If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
-```
+```sh
 ## ~/.docker/config.json
 {
 "proxies":{
