@@ -24,13 +24,11 @@ To run the server with a default HuggingFace model (Qwen/Qwen2-0.5B-Instruct-GGU
 ```sh
 docker run --rm \
     --device /dev/dri \
-    --gpus all \
     -p 8000:8000 \
     llamacpp-intel-sycl:latest
 ```
 
 - `--device /dev/dri` exposes the Intel GPU to the container.
-- `--gpus all` (if using Docker with GPU support) ensures all GPUs are available.
 - `-p 8000:8000` maps the server port.
 
 ### Custom Model or Arguments
@@ -40,7 +38,6 @@ The default model and arguments can be overridden as needed:
 ```sh
 docker run --rm \
     --device /dev/dri \
-    --gpus all \
     -p 8000:8000 \
     llamacpp-intel-sycl:latest \
     --hf_model_repo_id <hf-repo> --model <model-file>
@@ -53,7 +50,6 @@ To use a model file stored on the host machine, mount the directory containing t
 ```sh
 docker run --rm \
     --device /dev/dri \
-    --gpus all \
     -p 8000:8000 \
     -v /path/to/models:/models \
     llamacpp-intel-sycl:latest \
