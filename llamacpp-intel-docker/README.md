@@ -4,13 +4,13 @@ This repository provides a Dockerfile to build a containerized environment for r
 
 ## Table of Contents
 
-- Features(#features)
-- Build the Docker Image(#build-the-docker-image)
-- Run the Container(#run-the-container)
-- Custom Model or Arguments(#custom-model-or-arguments)
-- Mount a Local Directory and Run a Model from It(#mount-a-local-directory-and-run-a-model-from-it)
-- Notes(#notes)
-- License(#license)
+- [Features](#features)
+- [Build the Docker Image](#build-the-docker-image)
+- [Run the Container](#run-the-container)
+- [Custom Model or Arguments](#custom-model-or-arguments)
+- [Mount a Local Directory and Run a Model from It](#mount-a-local-directory-and-run-a-model-from-it)
+- [Notes](#notes)
+- [License](#license)
   
 ## Features
 - **Intel GPU support**: Installs [Intel GPU drivers](https://dgpu-docs.intel.com/driver/client/overview.html) and [oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html) for SYCL acceleration.
