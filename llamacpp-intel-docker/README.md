@@ -87,10 +87,11 @@ This approach can be combined with other arguments as needed.
 To override the entry point and start the container with the bash shell, run the following command:
 ```sh
 docker run -it --rm \
-    --device=/dev/dri \
-    --net host \
-    llamacpp-intel-sycl:latest \
-    --entrypoint /bin/bash
+	--device=/dev/dri \
+	--net host \
+	--entrypoint /bin/bash \
+	llamacpp-intel-sycl:latest
+
 ```
 ---
 
