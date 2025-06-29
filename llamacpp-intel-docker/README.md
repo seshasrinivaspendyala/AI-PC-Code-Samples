@@ -2,6 +2,16 @@
 
 This repository provides a Dockerfile to build a containerized environment for running [llama-cpp-python](https://github.com/abetlen/llama-cpp-python) with Intel GPU acceleration using SYCL (oneAPI). The image is based on Ubuntu 25.10 and includes all necessary Intel GPU drivers, oneAPI Base Toolkit, and Python dependencies for efficient LLM inference.
 
+## Table of Contents
+
+- Features(#features)
+- Build the Docker Image(#build-the-docker-image)
+- Run the Container(#run-the-container)
+- Custom Model or Arguments(#custom-model-or-arguments)
+- Mount a Local Directory and Run a Model from It(#mount-a-local-directory-and-run-a-model-from-it)
+- Notes(#notes)
+- License(#license)
+  
 ## Features
 - **Intel GPU support**: Installs [Intel GPU drivers](https://dgpu-docs.intel.com/driver/client/overview.html) and [oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html) for SYCL acceleration.
 - **llama-cpp-python**: Builds and installs with Intel SYCL support for fast inference.
@@ -31,7 +41,7 @@ docker run -it --rm \
 - `--device /dev/dri` exposes the Intel GPU to the container.
 - `-p 8000:8000` maps the server port.
 
-### Custom Model or Arguments
+## Custom Model or Arguments
 
 The default model and arguments can be overridden as needed:
 
