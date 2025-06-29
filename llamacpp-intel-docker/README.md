@@ -40,7 +40,8 @@ docker run -it --rm \
     --device /dev/dri \
     -p 8000:8000 \
     llamacpp-intel-sycl:latest \
-    --hf_model_repo_id <hf-repo> --model <model-file> --n_gpu_layers -1
+    --n_gpu_layers -1 \
+    --hf_model_repo_id <hf-repo> --model <model-file>
 ```
 
 ## Mount a Local Directory and Run a Model from It
@@ -48,11 +49,12 @@ docker run -it --rm \
 To use a model file stored on the host machine, mount the directory containing the model into the container and specify the path to the model file. For example, if the model is located in `/path/to/models` on the host:
 
 ```sh
-docker run --rm \
+docker run -it --rm \
     --device /dev/dri \
     -p 8000:8000 \
     -v /path/to/models:/models \
     llamacpp-intel-sycl:latest \
+    --n_gpu_layers -1 \
     --model /models/<model-file>
 ```
 
