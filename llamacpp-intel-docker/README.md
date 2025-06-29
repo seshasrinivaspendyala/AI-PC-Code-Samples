@@ -22,7 +22,11 @@ docker build -t llamacpp-intel-sycl:latest .
 To run the server with a default HuggingFace model (Qwen/Qwen2-0.5B-Instruct-GGUF):
 
 ```sh
-docker run --rm --device /dev/dri --gpus all -p 8000:8000 llamacpp-intel-sycl:latest
+docker run --rm \
+    --device /dev/dri \
+    --gpus all \
+    -p 8000:8000 \
+    llamacpp-intel-sycl:latest
 ```
 
 - `--device /dev/dri` exposes the Intel GPU to the container.
@@ -34,8 +38,12 @@ docker run --rm --device /dev/dri --gpus all -p 8000:8000 llamacpp-intel-sycl:la
 The default model and arguments can be overridden as needed:
 
 ```sh
-docker run --rm --device /dev/dri --gpus all -p 8000:8000 llamacpp-intel-sycl:latest \
-  --hf_model_repo_id <hf-repo> --model <model-file>
+docker run --rm \
+    --device /dev/dri \
+    --gpus all \
+    -p 8000:8000 \
+    llamacpp-intel-sycl:latest \
+    --hf_model_repo_id <hf-repo> --model <model-file>
 ```
 
 ## Mount a Local Directory and Run a Model from It
@@ -43,10 +51,13 @@ docker run --rm --device /dev/dri --gpus all -p 8000:8000 llamacpp-intel-sycl:la
 To use a model file stored on the host machine, mount the directory containing the model into the container and specify the path to the model file. For example, if the model is located in `/path/to/models` on the host:
 
 ```sh
-docker run --rm --device /dev/dri --gpus all -p 8000:8000 \
-  -v /path/to/models:/models \
-  llamacpp-intel-sycl:latest \
-  --model /models/<model-file>
+docker run --rm \
+    --device /dev/dri \
+    --gpus all \
+    -p 8000:8000 \
+    -v /path/to/models:/models \
+    llamacpp-intel-sycl:latest \
+    --model /models/<model-file>
 ```
 
 - `-v /path/to/models:/models` mounts the local directory into the container at `/models`.
