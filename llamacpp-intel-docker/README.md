@@ -91,12 +91,12 @@ This approach can be combined with other arguments as needed.
 ```
 {
 "proxies":{
-  "default": {
+	"default": {
     "httpProxy": "<your-proxy-details>",
     "httpsProxy": "<your-proxy-details>",
     "noProxy": "<your-proxy-details>"
-    }
-  }
+		}
+	}
 }
 ```
 ---
