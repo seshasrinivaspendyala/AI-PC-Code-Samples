@@ -92,8 +92,8 @@ This approach can be combined with other arguments as needed.
 {
 "proxies":{
   "default": {
-    "httpProxy": "<your-proxy-address>",
-    "httpsProxy": "<your-proxy-address>",
+    "httpProxy": "<your-proxy-details>",
+    "httpsProxy": "<your-proxy-details>",
     "noProxy": "<your-proxy-details>"
     }
   }
