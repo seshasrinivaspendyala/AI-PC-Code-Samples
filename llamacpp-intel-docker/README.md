@@ -7,6 +7,7 @@ This repository provides a Dockerfile to build a containerized environment for r
 - [Features](#features)
 - [Build the Docker Image](#build-the-docker-image)
 - [Run the Container](#run-the-container)
+  - [Default container](#default-container)
   - [Custom Model or Arguments](#custom-model-or-arguments)
   - [Mount a Local Directory and Run a Model from It](#mount-a-local-directory-and-run-a-model-from-it)
 - [Notes](#notes)
@@ -20,6 +21,8 @@ This repository provides a Dockerfile to build a containerized environment for r
 - **Python environment**: Uses [uv](https://github.com/astral-sh/uv) for fast Python dependency management.
 - **Ready-to-use server**: Runs the llama-cpp-python server by default.
 
+---
+
 ## Build the Docker Image
 
 Clone this repository and build the Docker image:
@@ -29,7 +32,11 @@ Clone this repository and build the Docker image:
 docker build -t llamacpp-intel-sycl:latest .
 ```
 
+---
+
 ## Run the Container
+
+### Default container
 
 To run the server with a default HuggingFace model (Qwen/Qwen2-0.5B-Instruct-GGUF):
 
@@ -75,10 +82,14 @@ docker run -it --rm \
 
 This approach can be combined with other arguments as needed.
 
+---
+
 ## Notes
 - Make sure your host system has an Intel GPU and the necessary drivers installed.
 - For more information about supported models, server options, and how to call inference endpoints, see the [llama-cpp-python OpenAI Server documentation](https://llama-cpp-python.readthedocs.io/en/latest/server/).
 - If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
+
+---
 
 ## License:
 View the LICENSE file for the repository [here](./LICENSE).
