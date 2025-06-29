@@ -88,21 +88,19 @@ This approach can be combined with other arguments as needed.
 - Make sure your host system has an Intel GPU and the necessary drivers installed.
 - For more information about supported models, server options, and how to call inference endpoints, see the [llama-cpp-python OpenAI Server documentation](https://llama-cpp-python.readthedocs.io/en/latest/server/).
 - If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
-
 ```
-
+# config.json(~/.docker/config.json)
 {
 "proxies":{
 	"default": {
-		"httpProxy": "http://proxy-dmz.intel.com:912",
-		"httpsProxy": "http://proxy-dmz.intel.com:912",
-		"noProxy": "localhost,127.0.0.1,::1"
+		"httpProxy": <your-proxy-details>,
+		"httpsProxy": <your-proxy-details>,
+		"noProxy": <your-proxy-details>
 		}
 	}
 }
-
-
 ```
+
 ---
 
 ## License:
