@@ -17,6 +17,7 @@ This repository provides a Dockerfile to build a containerized environment for r
 ---
 
 ## Features
+
 - **Intel GPU support**: Installs [Intel GPU drivers](https://dgpu-docs.intel.com/driver/client/overview.html) and [oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html) for SYCL acceleration.
 - **llama-cpp-python**: Builds and installs with Intel SYCL support for fast inference.
 - **Python environment**: Uses [uv](https://github.com/astral-sh/uv) for fast Python dependency management.
@@ -64,6 +65,10 @@ docker run -it --rm \
 	--hf_model_repo_id <hf-repo> --model <model-file>
 ```
 
+- `--n_gpu_layers -1` All layers of the model are offloaded to your GPU.
+- Replace `--hf_model_repo_id <hf-repo>` with the HuggingFace model repo id to use.
+- Replace `--model <model-file>` with the HuggingFace model file to use. 
+
 ### Mount a local directory and run a model from it
 
 To use a model file stored on the host machine, mount the directory containing the model into the container and specify the path to the model file. For example, if the model is located in `/path/to/models` on the host:
@@ -86,6 +91,7 @@ This approach can be combined with other arguments as needed.
 ### Run bash shell in the container
 
 To override the entry point and start the container with the bash shell, run the following command:
+
 ```sh
 docker run -it --rm \
 	--device=/dev/dri \
@@ -94,9 +100,13 @@ docker run -it --rm \
 	llamacpp-intel-sycl:latest
 
 ```
+- `--net host` Instead of creating a own different network in the container, it is going to use host network.
+- To override the default server entry point and start the container with a Bash shell instead of the default command, we can use  `--entrypoint /bin/bash`.
+
 ---
 
 ## Notes
+
 - Make sure your host system has an Intel GPU and the necessary drivers installed.
 - For more information about supported models, server options, and how to call inference endpoints, see the [llama-cpp-python OpenAI Server documentation](https://llama-cpp-python.readthedocs.io/en/latest/server/).
 - If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
@@ -116,4 +126,5 @@ docker run -it --rm \
 ---
 
 ## License:
+
 View the LICENSE file for the repository [here](./LICENSE).
