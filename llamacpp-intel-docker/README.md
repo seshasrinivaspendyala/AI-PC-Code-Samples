@@ -66,7 +66,7 @@ This approach can be combined with other arguments as needed.
 ## Notes
 - Make sure your host system has an Intel GPU and the necessary drivers installed.
 - For more information about supported models, server options, and how to call inference endpoints, see the [llama-cpp-python OpenAI Server documentation](https://llama-cpp-python.readthedocs.io/en/latest/server/).
-- If you're behind some proxies, please update the config.json *(~/.docker/config.json)* file with the correct proxy settings before running the container.
+- If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
 
 ## License:
 View the [LICENSE](./LICENSE) file for the llama-cpp-python with Intel GPU (SYCL) Docker.
