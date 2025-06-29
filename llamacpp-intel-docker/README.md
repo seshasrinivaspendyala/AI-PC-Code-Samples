@@ -7,8 +7,8 @@ This repository provides a Dockerfile to build a containerized environment for r
 - [Features](#features)
 - [Build the Docker Image](#build-the-docker-image)
 - [Run the Container](#run-the-container)
-- [Custom Model or Arguments](#custom-model-or-arguments)
-- [Mount a Local Directory and Run a Model from It](#mount-a-local-directory-and-run-a-model-from-it)
+  - [Custom Model or Arguments](#custom-model-or-arguments)
+  - [Mount a Local Directory and Run a Model from It](#mount-a-local-directory-and-run-a-model-from-it)
 - [Notes](#notes)
 - [License](#license)
   
