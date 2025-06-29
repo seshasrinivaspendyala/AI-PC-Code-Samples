@@ -36,11 +36,11 @@ docker run -it --rm \
 The default model and arguments can be overridden as needed:
 
 ```sh
-docker run --rm \
+docker run -it --rm \
     --device /dev/dri \
     -p 8000:8000 \
     llamacpp-intel-sycl:latest \
-    --hf_model_repo_id <hf-repo> --model <model-file>
+    --hf_model_repo_id <hf-repo> --model <model-file> --n_gpu_layers 1
 ```
 
 ## Mount a Local Directory and Run a Model from It
