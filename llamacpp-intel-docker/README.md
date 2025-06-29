@@ -69,4 +69,4 @@ This approach can be combined with other arguments as needed.
 - If you're behind some proxies, please update the config.json(~/.docker/config.json) file with the correct proxy settings before running the container.
 
 ## License:
-View the [License](License) for the Llamacpp Intel Docker.
+View the [LICENSE](LICENSE) for the Llamacpp Intel Docker.
