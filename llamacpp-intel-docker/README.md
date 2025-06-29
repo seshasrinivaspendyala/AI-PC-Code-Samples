@@ -79,4 +79,4 @@ This approach can be combined with other arguments as needed.
 - If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
 
 ## License:
-View the [LICENSE](./LICENSE) file for the llama-cpp-python with Intel GPU (SYCL) Docker.
+View the LICENSE file for the repository [here](./LICENSE).
