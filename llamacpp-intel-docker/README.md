@@ -90,24 +90,14 @@ This approach can be combined with other arguments as needed.
 - If you're behind some proxies, please update the *config.json(~/.docker/config.json)* file with the correct proxy settings before running the container.
 ```
 {
-
 "proxies": {
-
-   "default": {
-
-     "httpProxy": "<your-proxy-address>",
-
-     "httpsProxy": "<your-proxy-address>",
-
-     "noProxy": "<your-proxy-details>"
-
+  "default": {
+    "httpProxy": "<your-proxy-address>",
+    "httpsProxy": "<your-proxy-address>",
+    "noProxy": "<your-proxy-details>"
    }
-
 }
-
 }
-
-
 ```
 ---
 
