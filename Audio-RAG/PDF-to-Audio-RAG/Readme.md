@@ -23,11 +23,11 @@ This audio response can be played directly in the notebook and also saved locall
 
 ## Architecture
 
-- The user provides a *PDF document* to serve as the knowledge base.
+- User provides a *PDF document* to serve as the knowledge base.
 - The document is loaded using the [*Langchain PyPDFLoader*](https://python.langchain.com/docs/integrations/document_loaders/pypdfloader/) and split into smaller chunks using the [*Langchain Text Splitter*](https://python.langchain.com/docs/how_to/recursive_text_splitter/).
 - These chunks are embedded using the [*Teapot LLM*](https://huggingface.co/teapotai/teapotllm) to form a searchable knowledge base.
-- The user submits an *audio query*, which is transcribed to text using the [*Whisper large-v3 model*](https://huggingface.co/openai/whisper-large-v3) (ASR).
-- The transcribed query is passed to the RAG system, which retrieves relevant information and generates a response.
+- User submits an *audio query*, which is transcribed to text using the [*Whisper large-v3 model*](https://huggingface.co/openai/whisper-large-v3) (ASR).
+- Transcribed query is passed to the RAG system, which retrieves relevant information and generates a response.
 - The response text is then converted to *audio* using the [*SpeechT5 model*](https://huggingface.co/microsoft/speecht5_tts) (TTS), which can be played and saved.
 
 ![How it works](./assets/Pdf_to_audio_rag_workflow.png)
