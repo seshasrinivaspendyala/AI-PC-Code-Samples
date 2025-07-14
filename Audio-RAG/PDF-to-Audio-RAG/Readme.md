@@ -41,15 +41,13 @@ This audio response can be played directly in the notebook and also saved locall
     │   ├── Audio_display.png                                       # Output screenshot image 2
     │   ├── Generating_audio_transcription_using_Pytorch_XPU.png    # Output screenshot image 1
     │   └── Pdf_to_audio_rag_workflow.png                           # Workflow image
+    ├── PDF_to_Audio_RAG.ipynb                                      # Notebook file to excute the project sample
     ├── Readme.md                                                   # Readme file which contains all the details and instructions about the project sample
     ├── dpcpp_cpp_compiler_developer_guide_and_reference.pdf        # Document file for knowledge base
     ├── input_audio_query.wav                                       # Sample Input Audio Query
-    ├── PDF_to_Audio_RAG.ipynb                                      # Notebook file to excute the project sample
     ├── pyproject.toml                                              # Requirements for the project sample
     └── uv.lock                                                     # File which captures the packages installed for the project sample
-
-    
-
+   
 ---
 
 ## Prerequisites
