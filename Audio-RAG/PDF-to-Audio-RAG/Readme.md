@@ -38,7 +38,7 @@ This audio response can be played directly in the notebook and also saved locall
 
     PDF-to-Audio-RAG/                                               # Project Sample folder
     ├── assets/                                                     # Assets folder which contains the images and diagrams
-    │   ├── Audio_display.png                                       # Output screenshot image 2
+    │   ├── Audio_play.png                                          # Output screenshot image 2
     │   ├── Generating_audio_transcription_using_Pytorch_XPU.png    # Output screenshot image 1
     │   └── Pdf_to_audio_rag_workflow.png                           # Workflow image
     ├── PDF_to_Audio_RAG.ipynb                                      # Notebook file to excute the project sample
@@ -129,22 +129,17 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
 
 3. Launch Jupyter Lab and Run the notebook:\
-   Open the [Video Description Generation Query Retrieval](./Video_Description_Generation_Query_Retrieval.ipynb) notebook in the Jupyter Lab.
+   Open the [PDF-to-Audio-RAG](./PDF_to_Audio_RAG.ipynb) notebook in the Jupyter Lab.
    - In the Jupyter Lab go to the kernel menu in the top-right corner of the notebook interface and choose default kernel i.e. `Python 3 (ipykernel)` from the available kernels list and run the code cells one by one in the notebook.
    ```
    uv run jupyter lab
    ```
-   - If you are running the sample in the [Intel Tiber AI Cloud(ITAC)](https://ai.cloud.intel.com/), follow these steps in a new terminal session. Create and select the `uv_env` Jupyter kernel to get access to required python packages in the notebook.
-   ```
-   uv sync
-   uv run python -m ipykernel install --user --name=uv_env --display-name="uv_env"
-   ```
 
-4. GPU utilization can be seen in the Task Manager while generating video descriptions for videos which are processing on Intel XPUs.
-   ![Generating_video_descriptions_using_Pytorch_XPU](./assets/Generating_video_descriptions_using_Pytorch_XPU.png)
+4. GPU utilization can be seen in the Task Manager while generating audio transcription for input audio query which is processing on Intel XPUs.
+   ![Generating_audio_transcription_using_Pytorch_XPU.png](./assets/Generating_audio_transcription_using_Pytorch_XPU.png)
 
-5. Relevant video will be displayed based on user query.
-   ![Video_display](./assets/Video_display.png)
+5. The audio response can be played and saved.
+   ![Audio_play](./assets/Audio_play.png)
 
 ---
 
