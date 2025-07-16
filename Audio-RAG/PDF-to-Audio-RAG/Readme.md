@@ -138,7 +138,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
    uv run huggingface-cli download openai/whisper-large-v3
    uv run huggingface-cli download microsoft/speecht5_tts
-   uv run huggingface-cli download teapotai/teapotllm
+   #uv run huggingface-cli download teapotai/teapotllm
    uv run huggingface-cli download teapotai/teapotembedding
    uv run huggingface-cli download Matthijs/cmu-arctic-xvectors --repo-type dataset
    ```
