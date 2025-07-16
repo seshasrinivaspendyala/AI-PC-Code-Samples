@@ -125,7 +125,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
    uv sync
    ```
-4. Log in to Hugging Face, generate a token, and download the required models and datasets:\
+3. Log in to Hugging Face, generate a token, and download the required models and datasets:\
    `huggingface-cli` lets you interact directly with the Hugging Face Hub from a terminal. Log in to [Huggingface](https://huggingface.co/) with your credentials. You need a [User Access Token](https://huggingface.co/docs/hub/security-tokens) from your [Settings page](https://huggingface.co/settings/tokens). The User Access Token is used to authenticate your identity to the Hub.\
    Once you have your token, run the following command in your terminal.
    ```
@@ -138,17 +138,17 @@ To install any software using commands, Open a new terminal window by right-clic
    uv run huggingface-cli download Matthijs/cmu-arctic-xvectors --repo-type dataset
    ```
 
-5. Launch Jupyter Lab and Run the notebook:\
+4. Launch Jupyter Lab and Run the notebook:\
    Open the [PDF-to-Audio-RAG](./PDF_to_Audio_RAG.ipynb) notebook in the Jupyter Lab.
    - In the Jupyter Lab go to the kernel menu in the top-right corner of the notebook interface and choose default kernel i.e. `Python 3 (ipykernel)` from the available kernels list and run the code cells one by one in the notebook.
    ```
    uv run jupyter lab
    ```
 
-6. GPU utilization can be seen in the Task Manager while generating audio transcription for input audio query which is processing on Intel XPUs.
+5. GPU utilization can be seen in the Task Manager while generating audio transcription for input audio query which is processing on Intel XPUs.
    ![Generating_audio_transcription_using_Pytorch_XPU.png](./assets/Generating_audio_transcription_using_Pytorch_XPU.png)
 
-7. The audio response can be played and saved.
+6. The audio response can be played and saved.
    ![Audio_play](./assets/Audio_play.png)
 
 ---
