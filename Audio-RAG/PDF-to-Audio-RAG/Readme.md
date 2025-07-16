@@ -156,6 +156,7 @@ To install any software using commands, Open a new terminal window by right-clic
 ## Troubleshooting
 
 - **Dependency Issues:** Run `uv clean` and then `uv sync`.
+- **CMake compatibility issues**: Run `set CMAKE_POLICY_VERSION_MINIMUM=3.5` to prevent building issues.
 
 ---
 
