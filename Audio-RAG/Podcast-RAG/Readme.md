@@ -1,6 +1,11 @@
 # Podcast RAG
 ## Introduction
 
+This sample demonstrates a Retrieval-Augmented Generation (RAG) system using a **Podcast episode** as the knowledge base, with text query capability. 
+Initially an RSS feed link will be the input to allow the user to select and download a specific podcast episode. The selected audio undergoes preprocessing steps such as resampling and chunking to prepare it for transcription. 
+Each chunk is transcribed to text using the [**Whisper base model**](https://huggingface.co/openai/whisper-base) via an Automatic Speech Recognition (ASR) pipeline optimized to run on **Intel® Core™ Ultra Processors** with [**PyTorch XPU backend**](https://pytorch.org/docs/stable/notes/get_start_xpu.html) for hardware acceleration.  
+These transcriptions are then embedded using [**Teapot LLM**](https://huggingface.co/teapotai/teapotllm), creating a knowledge base.
+User queries are handled by the Teapot RAG system so that it retrieves a relevant text response. 
 
 ---
 
@@ -20,7 +25,11 @@
 
 ## Architecture
 
-
+- User provides an `RSS feed URL` to list available podcast episodes.
+- The selected audio podcast episode is downloaded, resampled and then split into chunks.
+- Each chunk is transcribed to text using the [*Whisper base model*](https://huggingface.co/openai/whisper-base) (ASR).
+- Transcribed text chunks are embedded using the [*Teapot LLM*](https://huggingface.co/teapotai/teapotllm) to create a searchable knowledge base.
+- A text query from the user is processed by the Teapot LLM RAG system, to get a relevant text response.
 
 ![How it works](./assets/Podcast_rag_workflow.png)
 
@@ -105,7 +114,18 @@ To install any software using commands, Open a new terminal window by right-clic
    cd <path/to/Podcast-RAG/folder>
    ```
    
-2. Log in to Hugging Face, generate a token, and download the required models and datasets:\
+2. Sync the UV environment:\
+   On Windows:
+   ```
+   set CMAKE_POLICY_VERSION_MINIMUM=3.5
+   uv sync
+   ```
+   On Linux:
+   ```
+   uv sync
+   ```
+   
+3. Log in to Hugging Face, generate a token, and download the required models and datasets:\
    `huggingface-cli` lets you interact directly with the Hugging Face Hub from a terminal. Log in to [Huggingface](https://huggingface.co/) with your credentials. You need a [User Access Token](https://huggingface.co/docs/hub/security-tokens) from your [Settings page](https://huggingface.co/settings/tokens). The User Access Token is used to authenticate your identity to the Hub.\
    Once you have your token, run the following command in your terminal.
    ```
@@ -116,16 +136,19 @@ To install any software using commands, Open a new terminal window by right-clic
    uv run huggingface-cli download openai/whisper-base
    ```
 
-3. Launch Jupyter Lab and Run the notebook:\
+4. Launch Jupyter Lab and Run the notebook:\
    Open the [Podcast-RAG](./Podcast_RAG.ipynb) notebook in the Jupyter Lab.
    - In the Jupyter Lab go to the kernel menu in the top-right corner of the notebook interface and choose default kernel i.e. `Python 3 (ipykernel)` from the available kernels list and run the code cells one by one in the notebook.
    ```
    uv run jupyter lab
    ```
 
-4. GPU utilization can be seen in the Task Manager while generating audio transcriptions for input audio podcast which is processing on Intel XPUs.
+5. GPU utilization can be seen in the Task Manager while generating audio transcriptions for input audio podcast which is processing on Intel XPUs.
    ![Generating_podcast_audio_transcriptions_using_Pytorch_XPU.png](./assets/Generating_podcast_audio_transcriptions_using_Pytorch_XPU.png)
 
+6. Output response:
+   ![Query_rag_response.png](./assets/Query_rag_response.png)
+   
 ---
 
 ## Troubleshooting
