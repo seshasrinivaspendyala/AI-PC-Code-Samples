@@ -137,7 +137,7 @@ To install any software using commands, Open a new terminal window by right-clic
    This command will prompt you for a token. Copy-paste yours and press Enter.
    ```
    uv run huggingface-cli download openai/whisper-base
-   #uv run huggingface-cli download teapotai/teapotllm
+   //uv run huggingface-cli download teapotai/teapotllm
    uv run huggingface-cli download teapotai/teapotembedding
    ```
 
