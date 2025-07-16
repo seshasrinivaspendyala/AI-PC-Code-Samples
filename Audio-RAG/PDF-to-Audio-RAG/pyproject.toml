@@ -32,6 +32,9 @@ torchvision = [
 pytorch-triton-xpu = [
   { index = "pytorch-xpu", marker = "sys_platform == 'win32' or sys_platform == 'linux'" },
 ]
+torchaudio = [
+  { index = "pytorch-xpu", marker = "sys_platform == 'win32' or sys_platform == 'linux'" },
+]
 
 [[tool.uv.index]]
 name = "pytorch-xpu"
