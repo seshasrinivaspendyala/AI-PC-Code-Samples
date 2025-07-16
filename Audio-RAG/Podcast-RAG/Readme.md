@@ -28,17 +28,15 @@
 
 ## Project Structure
 
-    PDF-to-Audio-RAG/                                               # Project Sample folder
-    ├── assets/                                                     # Assets folder which contains the images and diagrams
-    │   ├── Audio_play.png                                          # Output screenshot image 2
-    │   ├── Generating_audio_transcription_using_Pytorch_XPU.png    # Output screenshot image 1
-    │   └── Pdf_to_audio_rag_workflow.png                           # Workflow image
-    ├── PDF_to_Audio_RAG.ipynb                                      # Notebook file to excute the project sample
-    ├── Readme.md                                                   # Readme file which contains all the details and instructions about the project sample
-    ├── dpcpp_cpp_compiler_developer_guide_and_reference.pdf        # Document file for knowledge base
-    ├── input_audio_query.wav                                       # Sample Input Audio Query
-    ├── pyproject.toml                                              # Requirements for the project sample
-    └── uv.lock                                                     # File which captures the packages installed for the project sample
+    PDF-to-Audio-RAG/                                                       # Project Sample folder
+    ├── assets/                                                             # Assets folder which contains the images and diagrams
+    │   ├── Query_rag_response.png                                          # Output screenshot image 2
+    │   ├── Generating_podcast_audio_transcriptions_using_Pytorch_XPU.png   # Output screenshot image 1
+    │   └── Pdf_to_audio_rag_workflow.png                                   # Workflow image
+    ├── Podcast_RAG.ipynb                                                   # Notebook file to excute the project sample
+    ├── Readme.md                                                           # Readme file which contains all the details and instructions about the project sample
+    ├── pyproject.toml                                                      # Requirements for the project sample
+    └── uv.lock                                                             # File which captures the packages installed for the project sample
    
 ---
 
@@ -126,7 +124,7 @@ To install any software using commands, Open a new terminal window by right-clic
    ```
 
 4. GPU utilization can be seen in the Task Manager while generating audio transcriptions for input audio podcast which is processing on Intel XPUs.
-   ![Generating_podcast_audio_transcriptions_using_Pytorch_XPU.png](./assets/Generating_audio_transcription_using_Pytorch_XPU.png)
+   ![Generating_podcast_audio_transcriptions_using_Pytorch_XPU.png](./assets/Generating_podcast_audio_transcriptions_using_Pytorch_XPU.png)
 
 ---
 
