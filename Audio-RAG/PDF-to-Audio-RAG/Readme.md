@@ -68,7 +68,7 @@ To install any software using commands, Open the Command Prompt as an administra
    Download and install the Intel® Graphics Driver for Intel® Arc™ B-Series, A-Series, Intel® Iris® Xe Graphics, and Intel® Core™ Ultra Processors with Intel® Arc™ Graphics from [here](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)\
    **IMPORTANT:** Reboot the system after the installation.
 
-2. **CMake for windows**\
+2. **CMake for Windows**\
    Download and install the latest CMake for Windows from [here](https://cmake.org/download/)
 
 3. **Git for Windows**\
