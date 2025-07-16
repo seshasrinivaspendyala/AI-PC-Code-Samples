@@ -115,7 +115,7 @@ To install any software using commands, Open a new terminal window by right-clic
    cd <path/to/PDF-to-Audio-RAG/folder>
    ```
    
-2. Sync the UV environment.
+2. Sync the UV environment:
    On Windows:
    ```
    set CMAKE_POLICY_VERSION_MINIMUM=3.5
