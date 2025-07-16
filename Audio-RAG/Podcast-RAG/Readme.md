@@ -67,10 +67,13 @@ To install any software using commands, Open the Command Prompt as an administra
    Download and install the Intel® Graphics Driver for Intel® Arc™ B-Series, A-Series, Intel® Iris® Xe Graphics, and Intel® Core™ Ultra Processors with Intel® Arc™ Graphics from [here](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)\
    **IMPORTANT:** Reboot the system after the installation.
 
-2. **Git for Windows**\
+2. **CMake for Windows**\
+   Download and install the latest CMake for Windows from [here](https://cmake.org/download/)
+
+3. **Git for Windows**\
    Download and install Git from [here](https://git-scm.com/downloads/win)
 
-3. **uv for Windows**\
+4. **uv for Windows**\
    Steps to install `uv` in the Command Prompt are as follows. Please refer to the [documentation](https://docs.astral.sh/uv/getting-started/installation/) for more information.
    ```
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -83,14 +86,14 @@ To install any software using commands, Open a new terminal window by right-clic
    Download and install the GPU drivers from [here](https://dgpu-docs.intel.com/driver/client/overview.html)
 
 2. **Dependencies on Linux**\
-   Install Curl, Wget, Git using the following commands:
+   Install CMake, Curl, Wget, Git using the following commands:
    - For Debian/Ubuntu-based systems:
    ```
-   sudo apt update && sudo apt -y install curl wget git
+   sudo apt update && sudo apt -y install cmake curl wget git
    ```
    - For RHEL/CentOS-based systems:
    ```
-   sudo dnf update && sudo dnf -y install curl wget git
+   sudo dnf update && sudo dnf -y install cmake curl wget git
    ```
 
 3. **uv for Linux**\
